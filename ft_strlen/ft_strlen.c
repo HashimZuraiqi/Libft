@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hazuraiq <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/05 16:18:58 by hazuraiq          #+#    #+#             */
-/*   Updated: 2025/08/11 20:44:25 by hazuraiq         ###   ########.fr       */
+/*   Created: 2025/08/08 15:00:27 by hazuraiq          #+#    #+#             */
+/*   Updated: 2025/08/11 20:41:57 by hazuraiq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-
-int	ft_isalpha(char x)
+int	ft_strlen(char *str)
 {
-	if ((x >= 65 && x <= 90) || (x >= 97 && x <= 122))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-}
+    int	i;
 
-// int	main(int argc, char *argv[])
-// {
-// 	if (argc == 2)
-// 	{
-// 		printf("%d", ft_isalpha(*argv[1]));
-// 	}
-// }
+    i = 0;
+    while (str[i] != '\0')
+    {
+        i++;
+    }
+    return (i);
+}
