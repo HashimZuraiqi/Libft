@@ -24,10 +24,10 @@ int	ft_isdigit(int num)
 	}
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		printf("%d", ft_isdigit(*argv[1]));
-	}
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		printf("%d", ft_isdigit(*argv[1]));
+// 	}
+// }

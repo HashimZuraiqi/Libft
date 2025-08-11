@@ -16,18 +16,18 @@ int	ft_isalpha(char x)
 {
 	if ((x >= 65 && x <= 90) || (x >= 97 && x <= 122))
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (-1);
+		return (0);
 	}
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		printf("%d", ft_isalpha(*argv[1]));
-	}
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		printf("%d", ft_isalpha(*argv[1]));
+// 	}
+// }
